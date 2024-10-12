@@ -1,0 +1,79 @@
+Components of UNIX:
+----------------------
+2 important Components :
+      Shell
+      Kernel
+
+Shell :
+-----------
+It is the outer layer of UNIX operating system.
+Shell reads command provided by the user.
+Shell will check whether it is valid command or not.
+Shell will check if it is properly used or not.
+If everything is proper, then shell interprets/converts that command into kernel understandable form and handover that to the kernel 
+
+Kernel :
+------------
+It is the core component of UNIX operating system.
+It is responsible to execute our commands with the help of hardware components.
+Memory allocation and processor allocation will be taken care of by kernel.
+It acts as interface between shell and hardware components.
+
+User/Application ----> Shell ----> Kernel ----> hardware
+
+
+Command Flow:
+------------------
+
+End user types a command on 
+the terminal
+eg. touch sunny.txt
+      |
+      |
+      |
+      |
+      |
+Command will be submitted to
+the shell
+      |
+      |
+      |
+      |
+      |
+Shell checks whether this command
+is valid or not and whether it is        ----------------If it is not proper, error message is
+properly used or not                                           displayed on the terminal                                                   
+      |                                                                  |
+      |                                                                  |
+      |                                                                  |
+      |                                                                  |
+      |                                                                  |
+If it is proper, shell interprets                                        |
+that command into kernel understandable                                  |
+form and handover to the kernel                                          |
+      |                                                                  |
+      |                                                                  |
+      |                                                                  |
+      |                                                                  |
+      |                                                                  |
+Kernel execute the command and perform the                               |
+required action                                                          |
+      |                                                                  |
+      |                                                                  |
+      |                                                                  |
+      |                                                                  |
+      |                                                                  |
+Again $ prompt will be displayed to the                                  |
+terminal, which indicates ready for          -----------------------------
+
+
+Types of users :
+-----------------------
+normal user ==> $ prompt
+super user/root user/admin user ==> # prompt
+
+sudo -i ==> to switch to super user
+
+Online UNIX terminal :
+-----------------------
+http:/www.masswerk.at/jsuix

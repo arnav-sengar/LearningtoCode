@@ -1,0 +1,42 @@
+UNIX/LINUX
+------------------------
+DevOps ==> Linux
+Tester ==> Linux
+Developer ==> Linux
+PL/SQL,Oracle DBA ==> LINUX
+
+90% of real time applications ==> Linux Platform
+
+What is UNIX?
+-----------------
+It is an operating system created in 1960s.
+
+How it is relevant till date?
+-------------------------------
+With lot of extentions and improvements to base version, several flavours introduced by organizations/companies(Redhat Linux,Ubuntu,Suse...)
+
+Characteristics of UNIX :
+------------------------------
+1.It is freeware.
+2.It is Open source software.
+It is FOSS(Freeware and Open source software)
+3.It is multi user operating system.
+4.It is multi tasking operating system.
+5.It is user-friendly and supports  both CUI/GUI.
+6.It is more secure than windows operating system.
+
+Flavours of UNIX:
+----------------------
+As UNIX is open source operating system, multiple flavours are available with lot of extensions and improvements.
+
+Ubuntu
+Redhat
+CentOS
+Fedora
+Slackware
+Open-Solaries
+Kali
+Suse Linux Enterprise Server(SUSE)
+OpenSuse
+
+Note: distrowatch.com
