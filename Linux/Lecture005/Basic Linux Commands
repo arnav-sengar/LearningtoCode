@@ -1,0 +1,119 @@
+How to check your current location in system:
+-- pwd
+
+How to display name of current logged-in user:
+-- whoami
+
+How to check system date/time:
+-- date
+-- date +%D
+-- date +%T
+-- date +%H:%M
+
+How to display files and directory in current location:
+-- ls/ls -lt/ls -ltr/ls -lh
+
+How to clear the linux terminal:
+-- clear / ctrl+L
+
+How to display content of a file on terminal:
+-- cat <file_name>
+
+How to read a file and search for a word:
+-- less <file_name>  ---->  /search_word (if you want to see the next entry of that word ....press N)
+
+How to view content of a file page by page:
+-- more <file_name>
+
+How to create a new file in linux:
+-- touch <file_name>
+
+How to delete a file in linux:
+-- rm <file_name>
+
+How to edit a file in linux:
+-- vi <file_name>
+(this creates that file if no file is present in that directory and opens it for editing and if a file is present then it simply opens it for editing)
+
+-- nano <file_name>
+
+How to create a directory/folder in linux:
+-- mkdir <dir_name>
+
+How to delete a directory/folder in linux:
+-- rmdir <dir_name> / rm -rf <dir_name>
+
+How to change path or move to another folder in linux:
+-- cd/path/folder
+-- cd ..
+-- cd ../.. (similarly for many folders)
+
+How to copy and paste a file from one folder to another in linux:
+-- cp <file_name> <path_of_the_directory>
+-- cp ../<file_name> . 
+(to go to the previous directory and copy a file from that directory to the directory you are currently in)
+
+How to copy content of a file to another file in linux:
+-- cp <fileA> <fileB>
+(if fileB is not present then this command will create a new file with the name of fileB and copy the content of fileA to fileB)
+
+How to cut-paste a file from one folder to another in linux:
+-- mv <file_name> <path_of_that_directory>
+
+How to rename a file in linux:
+-- mv <fileA> <fileA_newName>
+
+How to read or display top n lines from a file in linux:
+-- head -n <file_name>
+
+How to read or display bottom n lines from a file in linux:
+-- tail -n <file_name>
+
+How to sort the content of a file in linux:
+-- sort <file_name>
+-- sort -r <file_name>(for reverse sorting)
+
+How to display unique content from a file in linux:
+-- sort <file_name> | uniq
+(sorting is must for finding uniques)
+
+A file has n lines. How to split it in m lines:
+-- split -l m <file_name>
+
+How to search a word and display matching content from a file in linux:
+-- grep "word_to_be_searched" <file_name>
+
+How to seach multiple words and display matching content in linux:
+-- egrep "word1|word2|word3" <file_name>
+
+How to use wildcards(*,[],{}) in linux:
+-- ls A* (this command lists all the files starting with A in the current directory)
+-- ls *.txt (this command lists all the files ending with .txt in the current directory)
+-- touch file{1..50} (this command creates 50 new files in the current directory)
+
+How to shuffle content of a file in linux:
+-- shuf <file_name>
+
+How to count number of lines in linux:
+-- wc -l <file_name>
+
+How to check if 2 files are identical or not in linux:
+-- cmp <fileA> <fileB>
+
+How to compare and display difference between 2 files in linux:
+-- diff <fileA> <fileB>
+-- diff -u <fileA> <fileB> (for more details)
+
+How to find a file in linux:
+-- find /path/ -name <file_name>
+
+How to find a file in linux:
+-- updatedb
+-- locate <file_name>
+
+How to display previously used commands in linux:
+-- history
+-- history | grep "command_name" (to search for a particular command)
+
+How to check syntax and options available for a command:
+-- --help

@@ -1,0 +1,22 @@
+Hypervisor
+----------
+It is a software that creates and runs virtual machines(VMs)
+
+How Hypervisor works:
+---------------------
+Virtualbox share hardware resources from Host OS
+Seperate set of virtual CPU,RAM,storage etc.
+VMs are fully isolated(independent of hosted OS)
+
+Benefits of VMs:
+----------------
+We don't need new resources to use different OS
+No risk of any issues with your primary OS
+Testing any app on different OS
+
+Virtualisation uses:
+--------------------
+Cheap
+Reduces workload,space and energy
+Easy backup using snapshot
+Easy recovery

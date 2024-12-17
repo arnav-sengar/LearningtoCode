@@ -1,0 +1,40 @@
+Definition --
+Linux is an open-source operating system based on Unix.
+It is known for it's security,flexibility.
+
+History --
+Created by Linus Torvalds in 1991.
+The name "Linux" comes from 'Linus' + 'Unix'.
+
+Unix
+------
+Unix is a powerful,multiuser,multitasking operating system originally developed in the 1970s at AT&T Bell Labs, which serves as the foundation for many modern operating systems.
+
+Unix v/s Linux
+--------------
+Unix is licensed while linux is open sourced.
+Linux is inspired by Unix and is designed to be line Unix.
+
+NOTE:
+-----
+Linux is not a OS.
+Linux is an open source Kernel.
+*Kernel is the core part of an operating system.
+
+Linux Distribution(Distros)
+---------------------------
+An operating system made from a software collection, which includes the linux kernel and often a package management system.
+Eg:Ubuntu,RedHat,CentOs,Arch and many more.
+
+Key features:
+-------------
+Open Source
+Multiuser
+Multitasking
+Security
+Portability
+
+Market Demand:
+--------------
+Job roles - Linux skills are in demand for roles such as system administrator,DevOps engineer,cloud achitects,software developers,network engineers,and cybersecurity professionals.
+Industory Adoption - Many companies, from tech giants like google,facebook and amazon rely on Linux for their IT infrastructure.

@@ -1,0 +1,6 @@
+SCP(Secure Copy Protocol):
+--------------------------
+is a command line tool used for securely transfering files between a local and a remote host, or between two remote hosts,using SSH for encryption and authentication.
+
+Learn about this online!!!
+This seems important in corporate.
