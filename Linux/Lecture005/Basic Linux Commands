@@ -117,3 +117,163 @@ How to display previously used commands in linux:
 
 How to check syntax and options available for a command:
 -- --help
+
+How to get more info about our command in linux:
+-- man <command>
+
+How to check which executable is using a command:
+-- which <command>
+
+How to use calculator in linux:
+-- bc (binary calculator)
+
+How to check calendar in linux:
+-- cal
+-- cal <year>
+
+How to check how long server has been up/running:
+-- uptime
+
+How to record your activity in terminal in a file:
+-- script (press ctrl+D to stop the recording)
+
+How to create a shortcut of a long command in linux:
+-- alias l="ls -ltr" (just for an example)
+
+How to compress a file in linux:
+-- gzip -k <file_name>
+(here -k signifies that keep the original file and make a new compressed file)
+
+How to decompress a file in linux:
+-- gzip -d <file_name>
+-- gunzip <file_name>
+
+How to compress a folder in linux:
+-- tar -czf <compressed_folder_name.tar.gz> <folder_name>
+
+How to decompress a folder in linux:
+-- tar -xzf <compressed_folder_name.tar.gz>
+
+How to compress multiple files in one zipped file in linux:
+-- zip <compressed_file_name.zip> <fileA> <fileB>
+
+How to decompress a zip file and extract the files from it:
+-- unzip <compressed_file_name.zip>
+
+How to list files in a zipped file:
+-- unzip -l <compressed_file_name>
+
+How to download a file from internet:
+-- wget <URL_of_file>
+-- wget -O <preferred_file_name> <URL_of_file>
+
+How to call an API on linux:
+-- curl http://numbersapi.com/random (just an example)
+
+How to install an application on linux:
+-- apt (for debian)
+-- yum/rpm (for redhat)
+
+How to list available packages to install on linux:
+-- apt search <package_name>
+-- yum/dnf list available
+
+How to start/stop a service on linux:
+-- systemctl start/stop <service_name>
+
+How to list all existing environment variables on linux:
+-- printenv
+
+How to add a new environment variable on linux:
+-- export JAVA_HOME="/usr/lib/jvm/java_v" (just an example)
+-- export PATH=$JAVA_HOME/bin:$PATH
+
+How to display a specific line from a file on linux:
+-- sed -n '5p' <file_name>
+
+How to replace a word with some other word in a file on linux:
+-- sed -n 's/<word_to_be_change>/<new_word>/g' <file_name>
+
+How to convert the contect to Uppercase or Lowercase within a file on linux:
+-- tr [:lower:] [:upper:] < file_name (this converts all the characters to upper case)
+
+How to extend or shrink size of a file on linux:
+-- truncate -s 100M <file_name>
+
+How to access remote linux server:
+-- ssh user@hostname
+
+How to check permissions of a file:
+-- ls -ltr
+*** rwx => user
+*** rw- => group
+*** r-- => other
+
+How to modify permissions of a file:
+-- chmod a+rwx <file_name>
+*** u => user
+*** g => group 
+*** o => other
+*** a => all
+
+How to change ownership of a  file :
+-- chown <owner_name> <file_name>
+
+How to change group ownership of a file :
+-- chgrp <owner_name> <file_name>
+
+How to check the free RAM space:
+-- free
+
+How to check % memory and CPU utilisation:
+-- top
+
+How to check disk utilisation:
+-- du
+
+How to check host name of linux server:
+-- hostname
+
+How to check CPU architecture in linux:
+-- lscpu
+
+How to see the list of storage devices, disk partitions on your linux server:
+-- lsblk
+
+How to see OS name of linux server:
+-- uname -a
+
+How to check if a process is running or not:
+-- ps -ef (for all processes)
+-- ps -ef | grep <process_name> (to see for a particular process)
+
+How to get PID of a process:
+-- pgrep <process_name>
+
+How to stop a process by a PID:
+-- kill -9 <PID>
+(-9 signifies forcefully)
+
+How to stop a process by its name:
+-- pkill <process_name>
+
+How to run a script in background:
+-- nohup ./script >/dev/null &
+
+How to simply run a script file in linux:
+-- bash <script_file_name>
+
+How to check the ip of your machine:
+-- ifconfig
+
+How to check if the server or website is accessible or not:
+-- ping <website_domain>
+
+How to check if a IP port is accessible and open or not:
+-- telnet IP Port
+
+How to check if port is open or not on our server:
+-- netstat -putan | grep 80 (80 port is an example here)
+
+How to change password for a user:
+-- passwd <user>
