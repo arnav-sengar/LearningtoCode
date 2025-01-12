@@ -1,8 +1,0 @@
-Online Examination management system is an application to conduct the online assessment for the user the web application allows the user to give the examination and download the certification of the completion of the examination.
-
-Vector university has developed an onine examination management system to conduct online assessment. 
-
-The style below mentioned needs to be added to the respective HTML pages with the below listed features--
-1. home.html => for displaying vector university home page which is having all the details of course and examination.
-2. certification => for displaying details of all the e-certificates to be downloaded on successful comlpletion of the course.
-3.aboutus.html - for displaying information reltated to online training assessments and mocktests.

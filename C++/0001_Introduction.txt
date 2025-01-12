@@ -1,0 +1,95 @@
+Why Learn C++
+-----------------------------------------------------------------
+*Popular
+    -Lots of code is still written in C++.
+    -Programming language popularity indexes.
+    -Active community, github, stack overflow.
+
+*Relevant
+    -Windows, Linux, MacOSX, Photoshop, Illustrator, MySQL, MongoDB, Game engines, more...
+    - Amazon, Apple, Microsoft, Paypal, Google, Facebook, MySQL, Oracle, HP, IBM, more...
+    -VR, Unreal Engine, Machine learning, Networking & Telecom, more...
+
+*Powerful
+    -Fast, flexible, scalable, portable.
+    -Procedural and Object Oriented.
+
+*Good career opportunities
+    -C++ skills always in demand.
+    -C++ == Salary++.
+
+
+
+Modern C++ and C++ Standard
+-------------------------------------------------------------------
+Early 1970s
+    -C Programming Language
+    -Dennis Ritchie
+
+1979
+    -Bjarne Stroustrup
+    -C with Classes
+
+1983
+    -Name changed to C++
+
+1989
+    -First Commercial release
+
+1998
+    -C++98 Standard
+
+2003
+    -C++03 Standard
+
+2011
+    -C++11 Standard
+
+2014
+    -C++14 Standard
+
+2017
+    -C++17 Standard
+
+
+
+How does it all work
+-----------------------------------------------------------------
+==> You must tell the computer EXACTLY what to do
+- Program is like recipe
+
+==> Programming language
+- source code
+- high level
+- for humans
+
+==> Editor- used to enter program text
+- .cpp and .h files
+
+==> Binary or other low level representation
+- object code 
+- for computers
+
+==> Compilers
+- translates from high level to low level
+
+==> Linker
+- links together our code with other libraries
+- creates executable program
+
+==> Testing and Debugging
+- finding and fixing program errors
+
+
+
+The C++ build process
+------------------------------------------------------------
+ Source Code     C++ Compiler      Object Code                  Linker
+ ___________                      _____________                  
+|           |                    |             |                                        C++ Standard Library
+| file1.cpp |--------------------|  file1.obj  |        _________________________           |
+| file2.cpp |--------------------|  file2.obj  |       |   Executable program    |----------- 
+| file3.cpp |--------------------|  file3.obj  |-------|        main.exe         |
+| main.cpp  |--------------------|  main.obj   |       |_________________________|-----------  
+|___________|                    |_____________|                                            |
+--                                                                                      Other Libraries
