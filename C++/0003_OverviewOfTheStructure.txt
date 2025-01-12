@@ -1,0 +1,141 @@
+Keywords:
+---------------------------------------------
+Keywords are the reserved words that have special meanings in the C++ language. They are the words that the language uses for a specifying the components of the language, such as void, int, public, etc. They can’t be used for a variable name or function name or any other identifiers.
+
+
+Keywords in C++:
+----------------------------------------------
+alignas (C++11)
+alignof (C++11)
+and
+and_eq
+asm
+atomic_cancel (TM TS)
+atomic_commit (TM TS)
+atomic_noexcept (TM TS)
+auto (1) (3) (4) (5)
+bitand
+bitor
+bool
+break
+case
+catch
+char
+char8_t (C++20)
+char16_t (C++11)
+char32_t (C++11)
+class (1)
+compl
+concept (C++20)
+const
+consteval (C++20) (5)
+constexpr (C++11) (3)
+constinit (C++20)
+const_cast
+continue
+co_await (C++20)
+co_return (C++20)
+co_yield (C++20)
+	
+
+decltype (C++11) (2)
+default (1)
+delete (1)
+do
+double
+dynamic_cast
+else
+enum (1)
+explicit
+export (1) (4)
+extern (1)
+false
+float
+for (1)
+friend
+goto
+if (3) (5)
+inline (1) (3)
+int (1)
+long
+mutable (1)
+namespace
+new
+noexcept (C++11)
+not
+not_eq
+nullptr (C++11)
+operator (1)
+or
+or_eq
+private (4)
+protected
+public
+	
+
+reflexpr (reflection TS)
+register (3)
+reinterpret_cast
+requires (C++20)
+return
+short
+signed
+sizeof (1)
+static
+static_assert (C++11)
+static_cast
+struct (1)
+switch
+synchronized (TM TS)
+template
+this (5)
+thread_local (C++11)
+throw (3) (4)
+true
+try
+typedef
+typeid
+typename (3) (4)
+union
+unsigned
+using (1) (4)
+virtual
+void
+volatile
+wchar_t
+while
+xor
+xor_eq 
+
+NOTE:
+    (1) — meaning changed or new meaning added in C++11.
+    (2) — new meaning added in C++14.
+    (3) — meaning changed or new meaning added in C++17.
+    (4) — meaning changed or new meaning added in C++20.
+    (5) — new meaning added in C++23. 
+
+
+Identifiers:
+---------------------------------------------------
+All C++ variables must be identified with unique names.
+
+These unique names are called identifiers.
+
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+Note: It is recommended to use descriptive names in order to create understandable and maintainable code:
+
+Eg:
+   // Good
+   int minutesPerHour = 60;
+
+   // OK, but not so easy to understand what m actually is
+   int m = 60;
+
+
+Preprocessor Directive:
+----------------------------------------------------
+Preprocessor programs provide preprocessor directives that tell the compiler to preprocess the source code before compiling. All of these preprocessor directives begin with a ‘#’ (hash) symbol. The ‘#’ symbol indicates that whatever statement starts with a ‘#’ will go to the preprocessor program to get executed. 
+*We can place these preprocessor directives anywhere in our program.
+
+Examples of some preprocessor directives are: #include, #define, #ifndef, etc.

@@ -1,0 +1,14 @@
+The main() function
+--------------------------------------------
+*Every C++ program must have exactly 1 main() function
+*Starting point of program execution
+*return 0 indicates successful program execution
+*2 versions that are both valid-->
+
+int main()             int main(int argc, char *argv[])
+{                      {
+    //code                  //code
+    return 0;               return 0;
+}                      }
+
+program.exe            program.exe argument1 argument2
