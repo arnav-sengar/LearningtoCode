@@ -1,0 +1,45 @@
+cout, cin, cerr, and clog are objects representing streams
+
+cout
+--------------------
+*standard output stream
+*console
+
+cin
+--------------------
+*standard input stream
+*keyboard
+
+<<
+--------------------
+*insertion operator
+*output streams
+
+>>
+--------------------
+*extraction operator
+*input streams
+
+cout and  <<
+---------------------
+*insert the data into the cout stream
+    cout << data;
+
+*can be changed
+    cout << "data 1 is" << data1;
+
+*does not automatically add line breaks
+    cout << "data1 is " << data1 << endl;
+    cout << "data1 is " << data1 << "\n";
+
+cin and >>
+---------------------
+*extract the data from the cin stream based in data's type
+    cin >> data;
+
+*can be chained
+    cin >> data1 >> data2;
+
+*can fail if the encountered data cannot be interpreted
+    data might have undetermined value
+
