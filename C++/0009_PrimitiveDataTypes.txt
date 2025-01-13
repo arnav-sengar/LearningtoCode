@@ -1,0 +1,60 @@
+Primitive Data Types
+-------------------------------
+Fundamental data types directly implemented by the C++ language.
+
+Some are -
+    Character types
+    Integer types
+        signed and unsigned
+    Floating-point types
+    Boolean types
+
+Size and precision is often compiler-dependent
+    #include <climits> 
+    //contains information of the size and precision of the data types of your specific compiler.
+
+
+Type sizes
+-------------------------------
+Expressed in bits
+
+The more bits, the more values that can be represented
+
+The more bits, the more storage required
+
+
+Character Type
+-------------------------------
+Used to represent single characters, 'A', 'X', '@'
+Wider types are used to represent wide character sets
+
+Integer Types
+-------------------------------
+Used to represent whole numbers.
+Signed and unsigned versions.
+
+Type name                  |       Size/precision
+---------------------------|---------------------------
+signed short int           |        atleast 16 bits
+signed int                 |        atleast 16 bits
+signed long int            |        atleast 32 bits
+signed long long int       |        atleast 64 bits
+_                          |
+unsigned short int         |        atleast 16 bits
+unsigned int               |        atleast 16 bits
+unsigned long int          |        atleast 32 bits
+unsigned long long int     |        atleast 64 bits
+
+Floating-point Type
+-------------------------------
+Used to represent non-integer numbers
+Represented by mantissa and exponent(scientific notation)
+Precision is the number of digits in the mantissa
+Precision and size are compiler dependent
+
+Boolean Type
+-------------------------------
+Used to represent true and false
+Zero is false
+Non-zero is true
+Usually 8 bits

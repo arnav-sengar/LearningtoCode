@@ -1,0 +1,83 @@
+Variables
+------------------------------
+A Variable is an abstraction for a memory location
+
+Allow programmers to use meaningful names and not memory addresses
+
+Variables have--
+   Type - their category(integer, real number, string, person, account...)
+   Value - the contents(10, 3.14, "Arnav"...)
+
+Variables must be declared before they are used.
+
+A variable value may change
+
+age = 21;     // Compiler Error
+
+int age;      // No Error
+age =21;   
+
+Declaring a Variable
+-------------------------------
+Syntax:
+    variable_type variable_name;
+
+Eg: int age;
+    double rate;
+    string name;
+    Account arnav_account;
+    Person arnav;
+
+Rules
+-------------------------------
+*Can contain letters, numbers, and underscores.
+
+*Must begin with a letter or underscore(_)
+
+*Cannot use C++ reserved keywords
+
+*Cannot redeclare a name in the same scope.
+
+*remember....C++ is case sensitive
+
+    Legal        |    Illegal
+  ---------------|---------------
+    Age          |     int
+    age          |     $age 
+    _age         |     2015_age
+    My_age       |     Age+1
+
+*Be consistent with your naming conventions
+   myVariableName or my_variable_name
+   avoid beginning names with underscores
+
+*Use meaningful names
+    not to long and not to short
+
+*Never use variables before initializing them. 
+
+*Declare variables close to when you need them in your code.
+
+
+Initializing Variables
+--------------------------------------
+int age;  // uninitialized
+
+int age =21;  // C-like initialization
+
+int age (21);  // Constructor initialization
+
+int age {21};  // C++11 list initialization Syntax
+               // recommended
+
+
+Globle and Local variables
+--------------------------------------
+Global variable--
+
+The variable that are declared outside of any function are called global variables.
+
+They can be accessed from any part of your program.(this means they can potentially changed from any part of the program)
+
+They are automatically initialized to zero(0)
+
