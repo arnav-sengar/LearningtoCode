@@ -1,0 +1,40 @@
+Expressions
+------------------------
+The most basic building blocks of a program
+
+"a sequence of operators and operands that specifies a computation
+
+Computes a value from a number of operands
+
+There is much, much more to expressions - not necessary at this level.
+
+Eg:
+    34                        //literal
+    favourite_number          //variable
+    1.5 + 2.8                 //addition
+    2 * 5                     //mutliplication
+    a > b                     //relational
+    a = b                     //assignment
+
+
+Statements
+-------------------------
+A complete line of code that performs some action
+
+Usually terminated with a semi-colon
+
+Usually contain expressions
+
+C++ has many type of Statements
+    expression, null, compound, selection, iteration,
+    declaration, jump, try blocks, and others
+
+Eg:
+    int x;                     //declaration
+    favourite_number = 12;     //assignment
+    1.5 + 2.8;                 //expression
+    x = 2 * 5;                 //assignment
+    if(a > b)                  //if
+    {
+        cout << "a is greater than b" << endl;
+    }

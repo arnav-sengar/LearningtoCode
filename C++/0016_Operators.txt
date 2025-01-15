@@ -1,0 +1,13 @@
+Operators in C++
+------------------------------
+C++ has a rich set of Operators
+    unary, binary, ternary
+
+Common operators can be grouped as follows:
+    assignment
+    arithmetic
+    increment/decrement
+    relational
+    logical
+    member access
+    other

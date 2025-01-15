@@ -92,4 +92,4 @@ The C++ build process
 | file3.cpp |--------------------|  file3.obj  |-------|        main.exe         |
 | main.cpp  |--------------------|  main.obj   |       |_________________________|-----------  
 |___________|                    |_____________|                                            |
---                                                                                      Other Libraries
+-                                                                                       Other Libraries
