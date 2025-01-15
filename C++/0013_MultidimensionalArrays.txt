@@ -1,0 +1,23 @@
+Multidimensional Arrays
+----------------------------------
+    element_type array_name [dim1_size][dim2_size]
+
+Eg: int movie_rating [3][4];
+
+    const int_rows {3};
+    const int_columns {4};
+    int movies_rating [rows][columns];
+
+    movie_rating ==>    0   1    2   3 
+                     0   
+
+                     1
+
+                     2
+
+    int movie_rating[3][4] {{0,4,3,5}
+                            {3,1,5,1}
+                            {1,5,6,2}
+                            };
+
+Rest all is similar to 1-D arrays.

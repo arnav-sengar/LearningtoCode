@@ -1,0 +1,101 @@
+Arrays 
+--------------------------
+Compound data type or data structure
+    collection of elements
+
+All elements are of same type
+
+Each element can be accessed directly
+
+Why Arrays
+--------------------------
+Suppose - we need to score test scores of a class
+    int test_score1 {0}
+    int test_score2 {0}
+    int test_score3 {0}
+    int test_score4 {0}
+    int test_score5 {0}
+    ...
+    int test_score100 {0}
+Now storing so many values and keeping track of each one becomes very hard.
+Here comes the array....which make our task easier.
+
+Characteristics
+--------------------------
+    Fixed size
+    Elements are all the same type
+    Stored contiguosly in memory
+    Individual elements can be accessed by their position or index.
+
+    First element is at index 0
+    Last element is at index size-1
+
+    No checking to see if you are out of bounds
+
+    Always initialize Arrays
+    very efficient
+    Iteration (looping) is often used to process
+
+Declaring and Initialising Arrays
+------------------------------------
+Declaring --
+    element_type array_name [constant number of elements];
+
+Eg: 
+    int test_scores [5]
+
+    int high_score_per_level [10];
+
+    const int days_in_year {365};
+    double hi_temperatures [days_in_year];
+
+Initialising --
+    element_type array_name [number of elements] {init list}
+
+Eg:
+    int test_scores [5] {100,95,54,67,32};
+
+    int high_score_per_level[10] {3,5} // initialize to 3,5 and remaining to 0
+
+    const double days_in_year {365};
+    double hi_temperatures [days_in_year] {0}; // initialize all to zero
+
+    int another_array [] {1,2,3,4,5}; // size automatically calculated
+
+Accessing array elements
+-------------------------------------
+    array_name [element_index]
+
+Eg:
+    //for displaying
+
+    int test_scores[5] {100,95,48,22,94};
+
+    cout << "First score at index 0 : " << test_scores[0] << endl;
+    cout << "Second score at index 1 : " << test_scores[1] << endl;
+    cout << "Third score at index 2 : " << test_scores[2] << endl;
+    cout << "Fourth score at index 3 : " << test_scores[3] << endl;
+    cout << "Fifth score at index 4 : " << test_scores[4] << endl;
+    
+    //for storing
+
+    cin >> test_scores[0];
+    cin >> test_scores[1];
+    cin >> test_scores[2];
+    cin >> test_scores[3];
+    cin >> test_scores[4];
+
+    //for assigning
+
+    test_scores[0] = 90;
+    
+
+How does it work?
+-------------------------------------------
+    The name of the array represnt the location of the first element in thhe array (index 0)
+
+    The [index] represents the offset from the beginning of the array
+
+    C++ simply performs a calculation to find the correct element
+
+    Remember -- no bounds checking

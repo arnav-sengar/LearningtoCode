@@ -1,0 +1,20 @@
+Constants
+-----------------
+They are very similar to C++ variables
+    have names
+    occupy storage
+    are usually typed
+
+**HOWEVER, THEIR VALUE CANNOT BE CHANGED ONCE DECLARED!
+
+Types of Constants in C++
+------------------
+    Literal constants 
+    Declared constants
+        const keyword
+    Constant expressions
+        constexpr keyword
+    Enumerated constants
+        enum keyword
+    Defined constants
+        #define

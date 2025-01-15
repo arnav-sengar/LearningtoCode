@@ -1,0 +1,14 @@
+The size of operator 
+    determines the size in bytes of a type or variable.
+
+Eg:
+    sizeof(int)
+    sizeof(double)
+
+    sizeof(some_varaible)
+
+    sizeof some_varaible 
+    //paranthesis are optional for variables.
+
+<climits> and <cfloat>
+    The <climits> and <cfloat> include the files contain size and precision information about your implementation of C++.
