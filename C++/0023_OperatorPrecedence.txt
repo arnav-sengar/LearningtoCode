@@ -1,0 +1,43 @@
+Operator Precedence :
+// --------------------
+
+// Operator	                                         Name	                         Associativity
+// -------------------------------------------------------------------------------------------------
+// () [] -> .	                        Function call, Subscript, Member access	          Left
+// ++ --	                                     Increment/Decrement	                  Right
+// ! ~ - +	                             Logical/Bitwise NOT, Unary plus/minus	          Right
+// * / %	                               Multiplication, Division, Modulus	          Left
+// + -                                     	Addition, Subtraction	                      Left
+// << >>	                                        Bitwise shift	                      Left
+// < <= > >=	                                 Relational operators	                  Left
+// == !=	                                     Equality operators	                      Left
+// &	                                            Bitwise AND	                          Left
+// ^	                                            Bitwise XOR	                          Left
+// |	                                            Bitwise OR	                          Left
+// &&	                                            Logical AND	                          Left
+// ||	                                            Logical OR	                          Left
+// ?:	                                         Ternary conditional	                  Right
+// = += -= *= /= %= &= ^= |= <<= >>=	    Assignment and compound assignment	          Right
+// ,	                                                Comma	                          Left 
+
+
+Operator Precedence
+------------------------
+In C++, operator precedence specifies the order in which operations 
+are performed within an expression. When an expression contains multiple 
+operators, those with higher precedence are evaluated before those 
+with lower precedence.
+
+Operator Associativity 
+-------------------------
+Operator associativity determines the order in which operands are 
+grouped when multiple operators have the same precedence. There are 
+two types of associativity:
+
+Left-to-right associativity: In expressions like a + b - c, the 
+addition and subtraction operators are evaluated from left to right.
+So, (a + b) - c is equivalent.
+
+Right-to-left associativity: Some operators, like the 
+assignment operator =, have right-to-left associativity. 
+For example, a = b = 4; assigns the value of b to a.
