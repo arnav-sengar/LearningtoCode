@@ -1,0 +1,95 @@
+if statement
+----------------------
+    if(expr)
+        statement;
+    
+**if the expression is true then execute the statement
+
+**if the expression is false then skip the statement
+
+Eg:
+    if(num > 10)                |
+        ++num;                  |
+                                |
+                            ___________   True
+                            | num > 1 |---------------
+                            -----------              |
+                                |                    |
+                       False    |                  ++num 
+                                |                    |
+                                |                    |
+                                |--------------------|
+                                |
+
+
+block statement 
+-----------------------
+    {
+        //variable declarations
+        statement1;
+        statement2;
+        ...
+    }
+Creates a block of code by including more than one statement in code block{}
+Blocks can alos contain variable declarations
+These variables are visible only within the block -- local scope
+
+
+if-else statements
+----------------------
+    if(expr)
+        statement1;
+    else
+        statement2;
+
+*** if the expression is true then execute statement1
+*** if the expression is false then execute statement2
+
+
+//Chaliya aapko difference samjhate h--
+
+Suppose we have
+
+    if(expr)
+        statement
+    else if(expr)
+        statement
+    else if(expr)
+        statement
+    else
+        statement
+
+    //is wale code mein.....woh check karega ki kya if true h
+    //agar hua...toh uska statement evaluate ho jaega..
+    //and program control baaki saare else_if and else ko skip 
+    //kar dega....aur koi condition check nhi hogi
+
+Now Suppose we have 
+
+    if(expr)
+        statement
+    if(expr)
+        statement
+    if(expr)
+        statement
+    else   
+        statement
+    
+    //is wale code mein......saaare ke saare if check honge
+    //if koi true hota h ....toh uska statement evaluate hogi
+    //and fir next if pe jaega...fir check hoga....
+    //is case mein jo else hota h....woh last wale if ke sath associate 
+    //hota h ... so if last wala if true h...
+    //toh else evaluated nhi hoga..
+    //agar if false hua toh...else evaluate hoga
+
+
+Nested if statements
+-----------------------
+    if(expr1)
+        if(expr2)
+            statement1;
+        else
+            statement2;
+    else   
+        statement3;
