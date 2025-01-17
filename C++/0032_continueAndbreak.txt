@@ -1,0 +1,55 @@
+continue
+
+    no further statments in the body of the loop are executed.
+    control immediately goes directly to the beginning of the loop for the next iteration
+
+break
+
+    no further statments in the body of the loop are executed.
+    loop is immediately terminated
+    control immediately goes to the statment following the loop construct
+
+Eg: 
+    vector <int> value{1,2,-1,3,-1,-99,7,8,10};
+
+    for(auto val : value)
+    {
+        if{val == -99}   //exit signal
+            break;
+        else if(val == -1)  //noise(ignore)
+            continue;
+        else   
+            cout << val << endl;
+    }
+
+
+Infinite loops:
+    Loops whose condition expresssion always evaluates to true
+
+    Usually this is unintended and a programmar error
+
+    Sometimes programmers use infinite loops and include and break statements in the body to control them
+
+    Sometimes infinite loops are exactly what we need
+        event loop in an event-driven program
+        operating system
+
+    Eg:
+        for(;;)
+            cout << "This will print forever" << endl;
+
+        while(true)
+            cout << "This will print forever" << endl;
+        
+        do{
+            cout << "This will print forever" << endl;
+        }while(true);
+
+        while(true){
+            char again{};
+            cout << "Do you want to again?(Y/N) : " ;
+            cin >> again;
+
+            if(again == 'n' || again == 'N')
+                break;
+        }
