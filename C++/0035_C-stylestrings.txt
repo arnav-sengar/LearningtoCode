@@ -1,0 +1,41 @@
+C-style Strings
+    Sequence of characters 
+        contiguous in memory
+        implemented as an array of characters
+        terminated by a null character(null)
+            null-character with a value of zero
+        referred to as zero or null terminated Strings
+    
+    String Literal
+        Sequence of characters in double quotes, eg: "Arnav"
+        constant 
+        terminated with null character
+
+    "C++ is fun"
+    _______________________
+    |C|+|+| |i|s| |f|u|n|\0|
+
+    Declaring variables:
+
+        char my_name[] {"Arnav"};
+        my_name[5] = 'y';    //Problem
+                            //as there is no space to allocate
+
+        char my_name[8] {"Arnav"};
+        my_name[5] = 'y';   //OK
+
+#include <cstring>
+    contains functions that work with c-style Strings
+
+    copying
+    concatenation
+    comparison
+    searching
+    and others
+
+#include <cstdlib>
+    contains functions to convert c-style strings to 
+        integer
+        float
+        long 
+        etc.

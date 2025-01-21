@@ -1,0 +1,194 @@
+C++ Strings
+
+    std::string is a class in the standard template library
+        #include <string>
+        std namespace
+        contiguous in memory
+        dynamic size
+        work with input and output streams
+        lots of useful member functions
+        out familiar operators can be used
+        can be easily converted to C-style strings if needed
+        safer
+
+Declaring and initializing :
+
+    #include <string>           //necessary to use C++ strings
+    using namespace std;        //necessary to use C++ strings
+
+    string s1;                  //Empty
+    string s2 {"Arnav"};        //Arnav
+    string s3 {s2};             //Arnav
+    string s4 {"Arnav",3};      //Arn 
+    string s5 {s3,0,2};         //Ar
+
+    string s6 (3, 'X');         //XXX
+
+Assignment :
+
+    string s1;
+    s1 = "C++ rocks!";
+    //s1 will grow dynamically if needed
+
+    string s2 {"Hello"};
+    s2 = s1;        
+    //s2 will lose it's content and take a copy
+    //of the content in s1;
+
+    **Concatenating:
+
+    string part1{"C++"};
+    string part2{"is a powerful"};
+
+    string sentence;
+
+    sentence = part1 + " " + part2 + " language";
+
+    //sentence will contain:
+    // C++ is a powerful language
+    //in C++ you can do Concatenation using '+' operators
+
+    ************************************************
+    suppose we write 
+
+        sentence = "C++" + " is a powerful language";
+
+        //THIS WILL RESULT IN ERROR
+        //because these are two c-style literals and we 
+        //cannot use this method in c-style literals
+        //Concatenation using '+' works if all are C++ 
+        //strings or atleast one of them is C++ string
+    *************************************************
+
+Accessing character:
+------------------------
+    Using [] :
+
+        string s1;
+        string s2 {"Arnav"};
+
+        cout << s2[0] << endl;      // A 
+
+    Using at() :
+
+        string s1;
+        string s2 {"Arnav"};
+
+        cout << s2.at(0) << endl;      // A 
+
+        s2[0] = 'F';        // Frnav
+        s2.at(0) = 'B';     // Brnav
+
+Displaying String:
+
+    string s1{"Arnav"};
+
+    for(char c : s1)
+        cout << c << " ";
+
+    output:
+        A r n a v
+    -----------------------
+    string s2 {"Frank"};
+
+    for(int c : s2)
+        cout << c << " ";
+    
+    output:
+        70 114 97 110 107 0
+        
+        //as we have taken c as integer it will give
+        //ASCII equivalent in the output
+        //0 at the end denotes the ASCII code for NULL.
+    ------------------------
+
+Comparing:
+-------------------
+    The objects are compared character by character lexically
+
+    Can compare:
+        two C++ string objects
+        a C++ string and C-style literals
+        a C++ string and C-style string
+
+    string s1 {"Apple"};
+    string s2 {"Banana"};
+    string s3 {"Kiwi"};
+    string s4 {"apple"};
+    string s5 {s1};     //Apple
+
+    s1 == s5        //True
+    s1 == s2        //False
+    s1 != s2        //True
+    s1 < s2         //True
+    s2 > s1         //True
+    s4 < s5         //False
+    s1 == "Apple"   //True
+    //This is an example of a C++ string 
+    //compared to a c-style string
+
+Substring:
+-----------------------
+    Extracts a Substring from a std::string 
+
+        object.substr(start_index, length)
+
+    string s1{"This is a test};
+
+    cout << s1.substr(0,4);        //This
+    cout << s1.substr(5,2);        //is
+    cout << s1.substr(10,4);       //test
+    
+Searching - find()
+    Returns the index of a substring in a C++ string 
+
+        object.find(search_string);
+    
+    string s1{"This is a test};
+
+    cout << s1.find("This");        //0
+    cout << s1.find("is");          //2
+    cout << s1.find("test");        //10
+    cout << s1.find('e');           //11
+    cout << s1.find("is",4);        //5
+    cout << s1.find("XXX");         //string::npos
+                                    //no postion info available
+
+Removing character - erase() & clear()
+
+    removes a substring of character from a std::string
+
+        object.erase(start_index, length)
+    
+    string s1 {"This is a string};
+
+    cout << s1.erase(0,5);      //is a test
+    cout << s1.erase(5,4);      //is a 
+    s1.clear();                 //empties string s1
+
+Other useful methods
+
+    string s1{"Frank"};
+    
+    cout << s1.length() << endl;        //5
+
+    s1 += "Arnav";
+    cout << s1 << endl;                 //Frank Arnav
+
+    many more...
+
+Input << and getline()
+
+    Reading std::string from cin 
+
+    string s1;
+    cin >> s1;          Hello There
+
+    cout << s1 << endl; //Hello
+                        //only accepts up to the first space
+
+    getline(cin,s1);    //Read entire line until \namespace
+    cout << s1 << endl;     //Hello There
+
+    getline(cin, s1, 'x')   //This isx
+    cout << s1 << endl;     //This is
