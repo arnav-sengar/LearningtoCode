@@ -1,0 +1,14 @@
+TRANSACTIONS 
+------------
+
+Why we study transaction?
+------------
+According to general computation principle we may have partially executed program, as the level of atomicity is instruction i.e. either and instruction is executed completely or not.
+
+But in DBMS view, user perform a logical work(operation) which is atomic in nature i.e. either operation is executed or not executed, there is no concept of partial execution
+
+for example : Transaction T1 which is to transfer money from account A to account B.In this transaction if a failure occurs after Read(B) then the final state of the system will be inconsitent as the money is debited from account A but not credited in account B, this will generate inconsistency.
+
+To remove this partial execution problem, we increase the level of atomicity and bundle all the instruction of a logical operation into a unit called transaction.
+
+So formally 'A transaction is a SET OF LOGICALLY CONSISTENT INSTRUCTIONS THAT PERFORM A LOGICAL UNIT OF WORK'

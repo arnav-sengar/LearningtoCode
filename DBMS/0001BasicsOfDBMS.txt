@@ -1,0 +1,47 @@
+DATA 
+----
+Data are characteristic, usually numerical that are collected through observations.
+Data are set of values of qualitative or quantitative variables about one or more persons or objects.
+Any facts  or figure about an entity is called data.
+
+
+INFORMATION
+-----------
+Information is the result of processing data.
+Information is the processed data that has been analyzed and interpreted to provide meaningful insights.
+Data is tranformed into information when viewed in context or in post-analysis.
+
+
+DATABASE
+--------
+Database is a organized collection of related data(Relational Database).
+Database is a collection of data that is stored in a way that allows for efficient retrieval and manipulation.
+The data is usually stored in the form of tables.
+
+
+DATABASE MANAGEMENT SYSTEM(DBMS)
+--------------------------------
+DBMS is a software that allows you to define, create, maintain and manipulate databases.
+
+
+PROBLEM WITH THE FILE SYSTEM
+----------------------------
+1.Data redundancy and inconsistency : Imagine two spreadsheets that list employee contacts, but one is updated with new phone number while the other is not, leading to confusion aobut the correct number to use.
+
+2.Difficulty accessing data : If you have multiple spreadsheets with different data, it can be hard to find the information you need.
+
+3.Data isolation : If customer profiles are stored  in one system and their order histories in another, merging this info for a comprehensive view can be cumbersome.
+
+4.Integrity Problem : After a customer updates their address on one page of the website, they find  the older address on another page because the change did not carry through all the systems.
+
+5.Atomicity Problem : If a customer places an order and the system fails after charging their card but before updating the order status , the customer will be charged but the order will not be recorded.
+(agar start kiya h toh khatm karo....else start hi na karo)
+
+6.Concurrect access anomalies :  If two customers try to update their profiles at the same time, the system may produce inconsistent results.
+
+
+INSTANCE AND SCHEMAS
+--------------------
+Instance is a collection of data in a database at a particular moment.
+Schema is a description of the structure of a database.
+Schema is a blueprint of the database.
