@@ -43,3 +43,43 @@ document.querySelector("h1").addEventListener("click",function(){
 // arrow function inside es5 method - object
 // event handler - element
 // class - blank object
+
+
+//================================================
+// manual binding : bind, call and apply
+// function ko call karte time aap set kar sakte ho ki uski this ki value kya hogi
+
+
+//call - manually sets the value of this while calling the fucntion
+let obje = {
+    name: "harsh",
+    age: 15
+};
+function defg(){
+    console.log(this.name);
+}//abhi yaha pe this ki value is window
+
+defg.call(obje);
+
+
+// apply - same as call...but isme...parameter passing is different....first parameter is the object jise aap this banana chahte ho...and rest all parameters in the form of an array[]....even if called functions mein arguments alag alag likhe ho...apply array se ek ek value extract karke pass karta jaega
+// syntax : fn.apply(thisValue, [arg1, arg2, arg3])
+function abcde(a, b, c) {
+    console.log(this.name, a, b, c);
+}
+
+abcde.apply(obje, [1, 2, 3]);
+
+
+// bind - It does NOT execute the function immediately
+// It returns a new function with this fixed
+// syntax : let newFn = fn.bind(thisValue, arg1, arg2...)
+
+let objt = {
+    name: "harsh"
+};
+function greet() {
+    console.log(this.name);
+}
+let newFunc = greet.bind(objt);
+newFunc(); // harsh
