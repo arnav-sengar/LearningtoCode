@@ -40,4 +40,3 @@ btn.addEventListener("click",function(){
 },20000/100);
 });
 
-
