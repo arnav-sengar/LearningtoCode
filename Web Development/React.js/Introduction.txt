@@ -1,0 +1,17 @@
+What is ReactJS?
+----------------
+It is basically a javascript library which is used to make UI(frontend).
+Created by Meta in 2013.
+
+Component based development:
+If hum ek particular part reload karte h ...toh poori site reload karne ki need nhi hoti....just woh Component
+
+Library 
+    - GSAP
+    - Lenis
+    - ReactJS
+
+Framework
+    - NextJS
+    - Angular
+
